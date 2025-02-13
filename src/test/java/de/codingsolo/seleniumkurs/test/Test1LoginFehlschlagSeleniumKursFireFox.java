@@ -28,7 +28,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 
 		//capabilities.setBrowserName("firefox");
 		//capabilities.setPlatform(Platform.LINUX);
-		System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/lib/firefox");
 		driver = new FirefoxDriver();
 		//driver = new RemoteWebDriver(remoteWebDriver, capabilities);
 
