@@ -24,13 +24,14 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 		System.out.println("Initialisiere Webdriver");
 		//URL remoteWebDriver = new URL("http://192.168.178.132:4444");
 		
-		//DesiredCapabilities capabilities = new DesiredCapabilities();
+		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		//capabilities.setBrowserName("firefox");
-		//capabilities.setPlatform(Platform.LINUX);
+		capabilities.setBrowserName("firefox");
+		capabilities.setPlatform(Platform.LINUX);
 		 // Firefox driver:
- 		System.setProperty("webdriver.gecko.driver", "usr/local/bin/geckodriver");
-		driver = new FirefoxDriver();
+ 		System.setProperty("webdriver.gecko.driver", "/usr/local/bin/");
+		driver = new FirefoxDriver(capabilities);
+		
 		//driver = new RemoteWebDriver(remoteWebDriver, capabilities);
 
 		driver.get("https://seleniumkurs.codingsolo.de");
