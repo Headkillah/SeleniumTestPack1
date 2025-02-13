@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxBinary;
 
 import de.codingsolo.seleniumkurs.pages.SeleniumKursLoginPage;
 
@@ -22,8 +23,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 		System.out.println("Initialisiere Webdriver");
 		System.setProperty("webdriver.gecko.driver", "/usr/lib/firefox/firefox");
 		FirefoxOptions options = new FirefoxOptions();
-		options.setHeadless(true);
-		options.setBinary("/usr/lib/firefox/firefox");
+		options.setBinary(new FirefoxBinary(new File("/usr/bin/firefox")));
 		driver = new FirefoxDriver(options);
 		driver.get("https://seleniumkurs.codingsolo.de");
 	}
