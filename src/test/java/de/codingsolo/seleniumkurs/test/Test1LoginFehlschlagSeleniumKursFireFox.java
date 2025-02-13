@@ -21,7 +21,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Initialisiere Webdriver");
-		URL remoteWebDriver = new URL("http://192.168.178.132:4442/wd/hub/");
+		URL remoteWebDriver = new URL("http://192.168.178.132:4444");
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
