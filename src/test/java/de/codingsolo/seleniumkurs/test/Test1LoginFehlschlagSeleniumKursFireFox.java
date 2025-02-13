@@ -2,6 +2,8 @@ package de.codingsolo.seleniumkurs.test;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,8 +19,11 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Initialisiere Webdriver");
-		System.setProperty("webdriver.gecko.driver", "/usr/bin/firefox");
+		File firefoxPathBinary = new File("/usr/bin/firefox");
+		System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
 		driver = new FirefoxDriver();
+//		System.setProperty("webdriver.gecko.driver", "/usr/bin/firefox");
+//		driver = new FirefoxDriver();
 		driver.get("https://seleniumkurs.codingsolo.de");
 	}
 
