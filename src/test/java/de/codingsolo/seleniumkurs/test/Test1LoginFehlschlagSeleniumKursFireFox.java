@@ -9,6 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import de.codingsolo.seleniumkurs.pages.SeleniumKursLoginPage;
 
@@ -19,11 +20,11 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Initialisiere Webdriver");
-		File firefoxPathBinary = new File("/lib/firefox/firefox");
-		System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
-		driver = new FirefoxDriver();
-//		System.setProperty("webdriver.gecko.driver", "/usr/bin/firefox");
-//		driver = new FirefoxDriver();
+		System.setProperty("webdriver.gecko.driver", "/usr/lib/firefox/firefox");
+		FirefoxOptions options = new FirefoxOptions();
+		options.setHeadless(true);
+		options.setBinary("/usr/lib/firefox/firefox")
+		driver = new FirefoxDriver(options);
 		driver.get("https://seleniumkurs.codingsolo.de");
 	}
 
