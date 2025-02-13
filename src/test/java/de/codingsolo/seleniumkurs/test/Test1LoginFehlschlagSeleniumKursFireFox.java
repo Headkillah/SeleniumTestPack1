@@ -23,7 +23,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 		System.setProperty("webdriver.gecko.driver", "/usr/lib/firefox/firefox");
 		FirefoxOptions options = new FirefoxOptions();
 		options.setHeadless(true);
-		options.setBinary("/usr/lib/firefox/firefox")
+		options.setBinary("/usr/lib/firefox/firefox");
 		driver = new FirefoxDriver(options);
 		driver.get("https://seleniumkurs.codingsolo.de");
 	}
