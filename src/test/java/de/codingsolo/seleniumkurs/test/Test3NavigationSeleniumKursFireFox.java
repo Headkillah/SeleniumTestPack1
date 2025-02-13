@@ -29,7 +29,7 @@ public class Test3NavigationSeleniumKursFireFox {
 
 	@After
 	public void tearDown() throws Exception {
-		System.out.println("Test abgeschlossen- ich r‰ume");
+		System.out.println("Test abgeschlossen- ich r√§ume");
 		driver.close();
 	}
 

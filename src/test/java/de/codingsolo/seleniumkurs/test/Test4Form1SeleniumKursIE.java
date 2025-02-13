@@ -31,7 +31,7 @@ public class Test4Form1SeleniumKursIE {
 
 	@After
 	public void tearDown() throws Exception {
-		System.out.println("Test abgeschlossen- ich r‰ume");
+		System.out.println("Test abgeschlossen- ich r√§ume");
 		driver.quit();
 	}
 
@@ -63,7 +63,7 @@ public class Test4Form1SeleniumKursIE {
 		testForm1Page.firmaInBox1Auswaehlen(new int[] { 2, 4, 6 });
 		testForm1Page.firmenUerbernehmen();
 		testForm1Page.firmaInBox2Auswaehlen(new int[] { 2 });
-		testForm1Page.ausgew‰hlteFirmenNachObenVerschieben();
+		testForm1Page.ausgew√§hlteFirmenNachObenVerschieben();
 
 		// Act
 

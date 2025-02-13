@@ -32,7 +32,7 @@ public class Test3NavigationSeleniumKursIE {
 
 	@After
 	public void tearDown() throws Exception {
-		System.out.println("Test abgeschlossen- ich r‰ume");
+		System.out.println("Test abgeschlossen- ich r√§ume");
 		driver.quit();
 	}
 
