@@ -17,7 +17,7 @@ public class SeleniumKursLoginPage {
 	@FindBy(css = "input.form-control[type='password']")
 	private WebElement inputPasswort;
 	
-	//Button für die Anmeldung
+	//Button fÃ¼r die Anmeldung
 	@FindBy(css = "input.btn-primary")
 	private WebElement btnAnmeldung;
 	

@@ -83,7 +83,7 @@ public class SeleniumKursTestForm1Page {
 		}
 	}
 
-	public void ausgew‰hlteFirmenNachObenVerschieben() {
+	public void ausgew√§hlteFirmenNachObenVerschieben() {
 		btnAuswahlObenBox2.click();
 	}
 
