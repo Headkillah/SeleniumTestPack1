@@ -28,7 +28,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 		//capabilities.setBrowserName("firefox");
 		//capabilities.setPlatform(Platform.LINUX);
 
-		driver = webdriver.Firefox();
+		driver = new FirefoxDriver();
 		//driver = new RemoteWebDriver(remoteWebDriver, capabilities);
 
 		driver.get("https://seleniumkurs.codingsolo.de");
