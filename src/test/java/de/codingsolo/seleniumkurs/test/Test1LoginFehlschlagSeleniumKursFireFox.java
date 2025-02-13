@@ -19,7 +19,7 @@ public class Test1LoginFehlschlagSeleniumKursFireFox {
 	@Before
 	public void setUp() throws Exception {
 		System.out.println("Initialisiere Webdriver");
-		File firefoxPathBinary = new File("/lib/firefox/firefox-bin");
+		File firefoxPathBinary = new File("/lib/firefox/firefox");
 		System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
 		driver = new FirefoxDriver();
 //		System.setProperty("webdriver.gecko.driver", "/usr/bin/firefox");
